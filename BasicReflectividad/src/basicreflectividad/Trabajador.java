@@ -43,7 +43,7 @@ public class Trabajador extends Persona {
   */
  @Override
  String a() {
-  String s = this.b() + " <-> " + super.a();
+  String s = super.a() + " <-> " + this.b();
   return s;
  }
 

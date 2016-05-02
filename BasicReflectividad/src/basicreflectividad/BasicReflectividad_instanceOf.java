@@ -23,6 +23,6 @@ public class BasicReflectividad_instanceOf {
   Persona p = new Persona();
 // Mismo funcionamiento isIntance(Object)
   boolean b = p instanceof Persona;
-
+  System.out.println("es 'p' objeto de la clase Persona : "+b);
  }
 }

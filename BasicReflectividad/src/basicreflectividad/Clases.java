@@ -22,22 +22,22 @@ public class Clases {
   lista[0] = new Persona(111, "David");
   lista[1] = new Trabajador(222, "Manolo", 3000, "Oracle");
 
-  System.out.println("\nCon instanceof");
+  System.out.println("\n -> Con instanceof ");
   for (int i = 0; i < lista.length; i++) {
    if (lista[i] instanceof Persona) {
-    System.out.println(lista[i].a() + " es del tipo Persona •");
+    System.out.println(lista[i].a() + " es objeto Persona " + lista[i].getClass().getName());
     if (lista[i] instanceof Trabajador) {
-     System.out.println(lista[i].a() + " es del tipo Trabajador •");
+     System.out.println(lista[i].a() + " es objeto Trabajador " + lista[i].getClass().getName());
     }
    }
   }
 
 //  InstanceOf solo para comprobaciones individuales
-  System.out.println("\n -> Con isInstance");
+  System.out.println("\n -> Con isInstance ");
   for (int i = 0; i < lista.length; i++) {
    for (int j = 0; j < clases.length; j++) {
     if (clases[j].isInstance(lista[i])) {
-     System.out.println(lista[i].a() + " es del tipo " + clases[j]);
+     System.out.println(lista[i].a() + " es del tipo " + clases[j].getName());
     }
    }
 
@@ -45,7 +45,7 @@ public class Clases {
    for (int f = 0; f < lista.length; f++) {
     for (int j = 0; j < clases.length; j++) {
      if (lista[i].getClass().equals(clases[j])) {
-      System.out.println(lista[i].a() + " es del tipo " + clases[j]);
+      System.out.println(lista[i].a() + " es del tipo " + clases[j].getName());
      }
     }
    }
