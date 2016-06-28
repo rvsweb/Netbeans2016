@@ -11,20 +11,19 @@ package librojavarama.T3EstructurasControl_Iterativa.Do_While;
  */
 public class T3Pag64EjDo_While {
 
-  public static void main(String[] args) {
+ public static void main(String[] args) {
 
-    Do_While_Contador.do_while_contador();
-  }
+  Do_While_Contador.do_while_contador();
+ }
 }
 
 class Do_While_Contador {
 
-  public static void do_while_contador() {
-    int numero = 1;
-    do {
-      System.out.println(numero);
-      numero++;
-    } while (numero <= 10);
+ public static void do_while_contador() {
+  int numero = 1;
+  do {
+   System.out.println(numero);
+  } while (numero++ < 10);
 
-  }
+ }
 }
