@@ -45,5 +45,17 @@ class Test {
   String i7 = Integer.toHexString(47802);
   System.out.println(i7);
 
+  int i8 = Integer.valueOf("22").intValue();
+
+  if (i8 == 22 && Integer.valueOf("22").intValue() == 22) {
+   System.out.println("Soy igual : " + i8);
+  }
+
+  int i9 = Integer.parseInt("22");
+
+  if (i9 == 22 && Integer.parseInt("22") == 22) {
+   System.out.println("Soy igual : " + i8);
+  }
+
  }
 }
