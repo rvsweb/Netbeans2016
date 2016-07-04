@@ -20,5 +20,7 @@ public class XPruebas {
   double num = numero / 100;
   System.out.println(num);
   System.out.println("Probar ");
+  System.out.println("Probar ");
+  System.out.println("Probar ");
  }
 }
