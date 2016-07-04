@@ -18,6 +18,6 @@ public class XPruebas {
   // TODO code application logic here
   double numero = 10;
   double num = numero / 100;
-  System.out.println(num);
+  System.out.println("El valor es : 1" + num);
  }
 }
