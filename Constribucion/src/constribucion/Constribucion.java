@@ -3,21 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package xpruebas;
+package constribucion;
 
 /**
  *
  * @author Portatil
  */
-public class XPruebas {
+public class Constribucion {
 
  /**
   * @param args the command line arguments
   */
  public static void main(String[] args) {
-  // TODO code application logic here
-  double numero = 10;
-  double num = numero / 100;
-  System.out.println("El valor es : 1" + num);
+  System.out.println("Prueba subida 12");
+  System.out.println("Prueba subida 1");
  }
 }
