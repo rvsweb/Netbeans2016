@@ -47,6 +47,6 @@ class LeerCambiarValoresCaracteres {
   } catch (IOException ex) {
    Logger.getLogger(LeerCambiarValoresCaracteres.class.getName()).log(Level.SEVERE, null, ex);
   }
-  System.out.println("");
+  System.out.println("\n ");
  }
 }
