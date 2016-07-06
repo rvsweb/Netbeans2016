@@ -22,7 +22,7 @@ class UtilizarClasePrintWriter {
   pantalla.write(array, 0, 14);
   pantalla.print(" ");
   pantalla.write(str);
-  pantalla.println("");
+  pantalla.println(" ! ! ! ");
   pantalla.flush();
  }
 }
