@@ -50,4 +50,3 @@ public class JBasicStringContarLetrasYCompararlas {
   cadena2("palabra");
  }
 }
-
