@@ -32,6 +32,6 @@ class UtilizarClasePrintWriter {
   pantalla1.write(array1, 0, 10);
   pantalla1.print(" ");
   pantalla1.write(str1);
-  pantalla1.println("\n ! ! ! ");
+  pantalla1.println("\n ! ! ! ! ! ");
  }
 }
