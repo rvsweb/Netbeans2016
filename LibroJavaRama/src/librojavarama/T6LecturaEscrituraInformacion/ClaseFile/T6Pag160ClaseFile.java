@@ -49,11 +49,12 @@ public class T6Pag160ClaseFile {
   Metodos_Para_Trabajar_Con_Directorios.lista_directorios(lista_directorio);
 
   System.out.println("----------------------------");
-  System.out.println("ver kilobytes : " + lista_directorio.length() / 1024);
+  System.out.println("Cantidad bytes : " + lista_directorio.length());
+  System.out.println("Cantidad kilobytes : " + lista_directorio.length() / 1024);
 
   File directorioEclipse = new File("c:\\x");
   long total_longitud = directorioEclipse.length();
-  System.out.println("valor total : " + total_longitud);
+  System.out.println("Valor total : " + total_longitud);
  }
 }
 
@@ -61,7 +62,7 @@ class Metodos_Para_Trabajar_Con_Directorios {
 
  public static void crear_directorio(File directorio) {
   boolean mkdir = directorio.mkdir();
-  System.out.println("directorio creado ? : " + mkdir);
+  System.out.println("Directorio creado ? : " + mkdir);
  }
 
  public static void lista_directorios(File lista) {
