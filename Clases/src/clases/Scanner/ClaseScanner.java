@@ -13,26 +13,27 @@ import java.util.Scanner;
  */
 public class ClaseScanner {
 
-    public ClaseScanner() {
-    }
-    
-    
+ public ClaseScanner() {
+ }
 
-    public static void main(String[] args) {
+ public static void main(String[] args) {
 
-        ClaseScanner cls = new ClaseScanner();
-        
-        cls.toString();
-        
-        Scanner in = new Scanner(System.in);
-        System.out.println("Leer entero");
-        int pieza = in.nextInt();
-        System.out.println("Leer double");
-        double volumne = in.nextDouble();
-        System.out.println("Leer String");
-        String mensaje = in.next();
-        System.out.println("Leer String 2");
-        String mensaje2 = in.next();
+  ClaseScanner cls = new ClaseScanner();
 
-    }
+  cls.toString();
+
+  Scanner in = new Scanner(System.in);
+  System.out.println("Leer entero");
+  int pieza = in.nextInt();
+  System.out.println("Leer double");
+  double volumne = in.nextDouble();
+  System.out.println("Leer String");
+  String mensaje = in.next();
+  System.out.println("Leer String 2");
+  String mensaje2 = in.next();
+
+  System.out.println("Leer String 3");
+  String mensaje3 = in.nextLine();
+
+ }
 }
