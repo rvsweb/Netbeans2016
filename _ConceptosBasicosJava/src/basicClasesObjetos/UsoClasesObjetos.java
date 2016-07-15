@@ -19,6 +19,7 @@ public class UsoClasesObjetos {
 // ATRIBUTOS PRIMITIVOS de INSTANCIA ( muchas copia ) 
  private byte b_num; // Iniciado y declarado : Almacena valor 
  private double d_num1 = 10.1; // iniciado y declarado
+ 
  private boolean is_true = true;
 // Constantes de instancia
  private final double fd_num = 20.2;
