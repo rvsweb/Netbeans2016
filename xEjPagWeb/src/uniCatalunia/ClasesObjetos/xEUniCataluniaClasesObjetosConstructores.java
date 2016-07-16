@@ -14,7 +14,7 @@ package uniCatalunia.ClasesObjetos;
 public class xEUniCataluniaClasesObjetosConstructores {
 
  public static void main(String[] args) {
-  Coordinate c = new Coordinate(1, 1);
+  Coordinate c = new Coordinate(1, 1, 5);
   Coordinate c0 = new Coordinate();
 
  }
@@ -23,6 +23,7 @@ public class xEUniCataluniaClasesObjetosConstructores {
 class Coordinate {
 
  protected int row, col;
+ public static int valor;
 
  /**
   *
@@ -43,6 +44,20 @@ class Coordinate {
   }
   this.row = r;
   this.col = c;
+ }
+
+ /**
+  *
+  * @param r
+  * @param c
+  */
+ public Coordinate(int r, int c, int valor) {
+  if (r < 1 || r > 8 || c < 1 || c > 8) {
+   throw new IllegalArgumentException("Valores por encima de los deseados ");
+  }
+  this.row = r;
+  this.col = c;
+  this.valor = valor;
  }
 
  /**
