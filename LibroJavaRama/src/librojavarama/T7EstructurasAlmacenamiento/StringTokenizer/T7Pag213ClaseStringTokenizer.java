@@ -23,6 +23,7 @@ public class T7Pag213ClaseStringTokenizer {
   StringTokenizer str, str1, str2;
   str = new StringTokenizer("1 2 3 4 5 6 7_8");
   System.out.println("La cadena str tiene : " + str.countTokens() + " elementos");
+
   str1 = new StringTokenizer("Uno Dos Tres Cuatro Cinco Seis_Siete");
   while (str1.hasMoreTokens()) {
    System.out.print(str1.nextToken());
