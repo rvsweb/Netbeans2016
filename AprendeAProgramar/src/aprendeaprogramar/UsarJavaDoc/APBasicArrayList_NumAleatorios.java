@@ -17,7 +17,7 @@ import java.util.Random;
  * <a href = "http://www.aprenderaprogramar.es/index.php?option=com_content&view=article&id=646:documentar-proyectos-java-con-javadoc-comentarios-simbolos-tags-deprecated-param-etc-cu00680b&catid=68:curso-aprender-programacion-java-desde-cero&Itemid=188" />
  * aprenderaprogramar.com – Didáctica en programación </a>
  */
-public class BasicArrayList_NumAleatorios {
+public class APBasicArrayList_NumAleatorios {
 
     /**
      * Objeto de clase
@@ -29,7 +29,7 @@ public class BasicArrayList_NumAleatorios {
      *
      * @param numeroItems
      */
-    public BasicArrayList_NumAleatorios(int numeroItems) {
+    public APBasicArrayList_NumAleatorios(int numeroItems) {
         serieAleatoria = new ArrayList<>();
         for (int i = 0; i < numeroItems; i++) {
             serieAleatoria.add(0);
@@ -61,7 +61,7 @@ public class BasicArrayList_NumAleatorios {
 
     public static void main(String[] args) {
 
-        BasicArrayList_NumAleatorios p = new BasicArrayList_NumAleatorios(5);
+        APBasicArrayList_NumAleatorios p = new APBasicArrayList_NumAleatorios(5);
         p.generarSerieDeAleatorios();
     }
 }
