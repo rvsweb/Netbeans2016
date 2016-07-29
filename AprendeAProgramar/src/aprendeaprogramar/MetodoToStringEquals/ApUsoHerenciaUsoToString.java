@@ -101,8 +101,8 @@ class Persona {
  public boolean equals(Object obj) { // Usamos Object obj para que haga referencia al metodos de la SuperClase Object
   if (obj instanceof Persona) {
    Persona tmpPersona = (Persona) obj;
-   if (this.nombre.equals(tmpPersona.nombre) && this.apellidos.equals(tmpPersona.apellidos)
-           && this.edad == tmpPersona.edad) {
+//   if (this.nombre.equals(tmpPersona.nombre) && this.apellidos.equals(tmpPersona.apellidos) && this.edad == tmpPersona.edad) {
+   if (this.getNombre().equals(tmpPersona.getNombre()) && this.getApellidos().equals(tmpPersona.getApellidos()) && this.getEdad() == tmpPersona.getEdad()) {
     return true;
    } else {
     return false;
@@ -187,7 +187,8 @@ class Profesor extends Persona {
  public boolean equals(Object obj) { // Usamos Object obj para que haga referencia al metodos de la SuperClase Object
   if (obj instanceof Profesor) {
    Profesor tmpProfesor = (Profesor) obj;
-   if (super.equals(tmpProfesor) && this.IdProfesor.equals(tmpProfesor.IdProfesor)) {
+//   if (super.equals(tmpProfesor) && this.IdProfesor.equals(tmpProfesor.IdProfesor)) {
+   if (super.equals(tmpProfesor) && this.getIdProfesor().equals(tmpProfesor.getIdProfesor())) {
     return true;
    } else {
     return false;
