@@ -39,6 +39,10 @@ public class ProfesorInterino2 extends Profesor2 {
   fechaComienzaInterinidad = fechaInicioInterinidad;
  }
 
+ ProfesorInterino2() {
+  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+ }
+
  /**
   *
   * @return
