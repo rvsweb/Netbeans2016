@@ -18,6 +18,7 @@ public class ListinProfesores {
 
 // Atributo de Instancia (Tipo) Profesor Tipo -> ( SuperTipo ) Contiene Subtipos
  private ArrayList<Profesor> listinProfesores;
+ private static int i = 1;
 
  /**
   * Constructor - apunta la variable de referencia al Objeto
@@ -42,6 +43,7 @@ public class ListinProfesores {
   System.out.println("Se procede a mostrar los datos de los profesores existentes en el listin ");
   for (Profesor tmp : listinProfesores) {
    tmp.mostrarDatos();
+   System.out.println("Numero profesor : " + i++);
   }
 
  }

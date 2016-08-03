@@ -7,6 +7,8 @@ Por último, en la clase ListinProfesores simulamos un listín que admite todo t
  */
 package aprendeaprogramar.HerenciaConPolimorfismoMetodos;
 
+import java.util.Objects;
+
 /**
  * @see
  * http://aprenderaprogramar.es/index.php?option=com_content&view=article&id=662:ejemplo-ejercicio-resuelto-con-polimorfismo-sobreescritura-de-metodos-y-herencia-en-java-codigo-cu00691b&catid=68:curso-aprender-programacion-java-desde-cero&Itemid=188
@@ -14,7 +16,7 @@ package aprendeaprogramar.HerenciaConPolimorfismoMetodos;
  * @version 1
  * @author Radwulf Candle
  */
-public class Persona {
+public class Persona { // Superclase - Basica Estandar
 
  private String nombre;
  private String apellidos;
@@ -42,4 +44,25 @@ public class Persona {
  public int getEdad() {
   return edad;
  }
+
+ @Override
+ public String toString() {
+  return getNombre().concat(" - ").concat(getApellidos()).concat(" - " + getEdad());
+ }
+
+ @Override
+ public boolean equals(Object obj) {
+  if (obj instanceof Persona) {
+   Persona tmpPersona = (Persona) obj;
+   if (this.nombre.equals(tmpPersona.nombre) && this.apellidos.equals(tmpPersona.apellidos)
+           && this.edad == tmpPersona.edad) {
+    return true;
+   } else {
+    return false;
+   }
+  } else {
+   return false;
+  }
+ } //Cierre del método equals
+
 }

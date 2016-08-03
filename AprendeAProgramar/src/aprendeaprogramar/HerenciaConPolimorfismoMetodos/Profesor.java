@@ -15,7 +15,6 @@ package aprendeaprogramar.HerenciaConPolimorfismoMetodos;
 public class Profesor extends Persona {
 
  private String IdProfesor;
- private static int i = 0;
 
  /**
   *
@@ -33,7 +32,7 @@ public class Profesor extends Persona {
   */
  public Profesor(String nombre, String apellidos, int edad) {
   super(nombre, apellidos, edad);
-  IdProfesor = " Numero : " + ++i;
+  IdProfesor = "Unknown";
  }
 
  public void setIdProfesor(String IdProfesor) {
@@ -44,8 +43,37 @@ public class Profesor extends Persona {
   return IdProfesor;
  }
 
+// public void mostrarDatos() {
+//  System.out.println("• Datos Profesor -> Nombre Profesor : " + getNombre() + " - Apellidos " + getApellidos() + " - con Id de Profesor : " + getIdProfesor() + " - Numero Profesor : " + getIdProfesor());
+// }
+ @Override
+ public String toString() {
+  return super.toString().concat(" con Id de Profesor : ").concat(getIdProfesor());
+ }
+
  public void mostrarDatos() {
-  System.out.println("Datos Profesor -> Nombre Profesor : " + getNombre() + " - Apellidos " + getApellidos() + " - con Id de Profesor : " + getIdProfesor());
+  System.out.println(" ○ Los datos disponibles son : " + this.toString());
+ }
+
+ /**
+  *
+  * @param obj
+  * @return
+  */
+ @Override
+ public boolean equals(Object obj) {
+  if (obj instanceof Profesor) {// Comprobamos si el objeto pasado como parámetro es un tipo Persona.
+// Compara el objeto entrado por parametro con el objeto que tiene la superclase
+   Profesor tmpProfesor = (Profesor) obj; // Creamos una variable tipo Persona asignamos objeto pasado como parámetro 
+// Variable la creamos para poder invocar campos , métodos de la clase Persona, ya que esto no podemos hacerlo sobre un objeto de tipo Object
+   if (super.equals(tmpProfesor) && this.IdProfesor.equals(tmpProfesor.IdProfesor)) {
+    return true;
+   } else {
+    return false;
+   }
+  } else {
+   return false;
+  }
  }
 
 }
