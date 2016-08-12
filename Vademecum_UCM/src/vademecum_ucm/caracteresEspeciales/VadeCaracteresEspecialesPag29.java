@@ -68,6 +68,7 @@ public class VadeCaracteresEspecialesPag29 {
   System.out.println("• Conversion : " + original);
 
   try {
+
    byte[] utf8Bytes = original.getBytes();
    byte[] defaultBytes = original.getBytes();
    byte[] Pepe = original2.getBytes();
@@ -87,7 +88,14 @@ public class VadeCaracteresEspecialesPag29 {
    System.out.println("------------- UnicodeFormatter -----------------");
 
    byte[] utf8bytes1 = original2.getBytes();
+   for (int i = 0; i < utf8bytes1.length; i++) {
+    System.out.println(utf8bytes1[i]);
+   }
+
    byte[] defaultBytes1 = original2.getBytes();
+   for (int i = 0; i < defaultBytes1.length; i++) {
+    System.out.println(defaultBytes1[i]);
+   }
 
    System.out.println("\n---------------- byteToHex ---------------------");
 
@@ -133,10 +141,7 @@ class UnicodeFormatter {
    '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'
   };
 // 2º Array de char 
-  char[] array = {
-   hexDigit[(b >> 4) & 0x0f],
-   hexDigit[b & 0x0f]
-  };
+  char[] array = {hexDigit[(b >> 4) & 0x0f], hexDigit[b & 0x0f]};
   return new String(array);
  }
 
@@ -150,5 +155,5 @@ class UnicodeFormatter {
   byte hi = (byte) (c >>> 8);
   byte lo = (byte) (c & 0xff);
   return byteToHex(hi) + byteToHex(lo);
-}
  }
+}
