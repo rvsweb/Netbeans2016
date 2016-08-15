@@ -5,8 +5,9 @@
  */
 package vademecum_ucm.For;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 
 /**
  * @see - 80
@@ -17,56 +18,48 @@ import java.util.Set;
 public class VadeFor_Iterator_Collection_Pag73 {
 
  public static void main(String[] args) {
-  ClaseC[] array_b = new ClaseC[10];
+
+  Collection<ClaseD> coleccion = new ArrayList<>();
+  ClaseD[] clase_d = new ClaseD[10];
 
   int x = 0;
   int y = 0;
 
-  for (int i = 0; i < array_b.length; i++) {
-   array_b[i] = new ClaseC(x = x + 1, y = y + 2);
+  for (int i = 0; i < clase_d.length; i++) {
+   coleccion.add(clase_d[i] = new ClaseD(i, i = i + 1));
   }
 
-//  SET no Ordena
-  Set<ClaseC> lista3 = new HashSet<>();
+  System.out.println("----------------------------------");
 
-  lista3.add(array_b[0]);
-  lista3.add(array_b[1]);
-  lista3.add(array_b[2]);
-  lista3.add(array_b[3]);
-  lista3.add(array_b[4]);
-  lista3.add(array_b[5]);
-  lista3.add(array_b[6]);
-  lista3.add(array_b[7]);
-  lista3.add(array_b[8]);
-  lista3.add(array_b[9]);
-
-  for (ClaseC xx : lista3) {
-   ClaseC.procesa(xx);
+  for (int i = 0; i < clase_d.length; i++) {
+   ClaseD.procesa(clase_d[i]);
   }
 
  }
 }
 
-class ClaseC {
+class ClaseD {
 
  private int x;
  private int y;
 
- public ClaseC() {
+ public ClaseD() {
   this.x = 0;
   this.y = 0;
 
  }
 
- public ClaseC(int x, int y) {
+ public ClaseD(int x, int y) {
   this.x = x;
   this.y = y;
  }
 
  static void procesa(Object obj) {
-  if (obj instanceof ClaseC) {
-   System.out.println("ClaseB");
-   System.out.println(((ClaseC) obj).x + " - " + ((ClaseC) obj).y);
+  if (obj instanceof ClaseD) {
+//   System.out.println(((ClaseD) obj).x + " - " + ((ClaseD) obj).y);
+   int x = ((ClaseD) obj).x;
+   int y = ((ClaseD) obj).y;
+   System.out.println(" Valores : -> x = " + x + " | y = " + y);
   }
  }
 
