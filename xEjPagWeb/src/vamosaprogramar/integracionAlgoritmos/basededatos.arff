@@ -1,0 +1,21 @@
+@relation basededatos
+
+@attribute obesidad {true,false}
+
+@attribute dislipidemia {true,false}
+
+@attribute diabetes {true,false}
+
+@attribute hipertension {true,false}
+
+@attribute hdl {true,false}
+
+@data
+
+true,false,true,false,true
+
+false,false,true,false,true
+
+false,false,true,false,true
+
+true,true,true,false,true
