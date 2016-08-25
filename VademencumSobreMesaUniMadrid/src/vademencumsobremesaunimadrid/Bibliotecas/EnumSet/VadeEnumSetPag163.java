@@ -13,6 +13,11 @@ import java.util.EnumSet;
  * @version
  * @author Raul Vela Salas
  */
+enum Dias {
+
+ Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo
+}
+
 public class VadeEnumSetPag163 {
 
  public static void main(String[] args) {
@@ -37,9 +42,4 @@ public class VadeEnumSetPag163 {
   System.out.println("EnumSet.complementOf : " + sinR);
 
  }
-}
-
-enum Dias {
-
- Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo
 }
