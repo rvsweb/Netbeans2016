@@ -39,5 +39,6 @@ public class VadeList_ListaObjetosPag179 {
    int n = (Integer) it.next();
    System.out.println(n + " ");
   }
+  System.out.println("");
  }
 }
