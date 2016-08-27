@@ -20,8 +20,7 @@ public class xEjMatrices {
   System.out.println(" nº de filas : " + a.length);
 //                                      f                             f  c      
   System.out.println("columna 1 : " + a[0].length + " - valor : " + a[0][0]);
-  System.out.println("columna 2 : " + a[1].length + " - valor : " + a[1][0]);
-  System.out.println("columna 2 : " + a[1].length + " - valor : " + a[1][1]);
+  System.out.println("columna 2 : " + a[1].length + " - valor : " + a[1][0] + " - valor : " + a[1][1]);
   
   System.out.println("-----------------------------------");
   int[][][] b = new int[][][]{{{11, 22, 33},

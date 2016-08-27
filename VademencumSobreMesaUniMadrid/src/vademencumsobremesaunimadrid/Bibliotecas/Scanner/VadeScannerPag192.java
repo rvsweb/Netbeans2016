@@ -33,11 +33,8 @@ class Uso_Scanner {
   * Ofrece una serie de metodos que , habiendo leido un 'Token' , lo intenta
   * interpretar como algun tipo PRIMITIVO de JAVA
   *
-  * int nextInt(); byte nextByte(); short nextShort(); long nextLong()
-  *
-  * double nextDouble() float nextFloat()
-  *
-  * boolean nextBoolean()
+  * int nextInt(); byte nextByte(); short nextShort(); long nextLong() double
+  * nextDouble() float nextFloat() boolean nextBoolean()
   *
   * Para analizar valores numericos se emplean los convenios locales de
   * puntuacion
@@ -49,8 +46,8 @@ class Uso_Scanner {
   *
   * NoSuchElementException -> si no quedan mas token
   *
-  * String nextLine() - Devuelve lo que queda por leer de la linea actual 
-  * 
+  * String nextLine() - Devuelve lo que queda por leer de la linea actual
+  *
   * @param args
   */
  public static void main(String[] args) {
@@ -73,6 +70,32 @@ class Uso_Scanner {
    String token = (String) it.next();
    System.out.print(token);
   }
-  System.out.println();
+
+  ////////////////////////////////////////////////////
+  System.out.println("--------------------------------");
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Introduce : [s]/[n]");
+  while (sc.nextLine().equals("s")) {
+//  while (true) { // Si pones un bucle infinito no ejecuta las demas sentencias 
+   System.out.println("¿ Sigo ? [s]/[n]");
+   String respuesta = sc.nextLine();
+   if (respuesta.equalsIgnoreCase("s")) {
+    continue;
+   }
+   if (respuesta.equalsIgnoreCase("n")) {
+    break; // Continua el flujo de ejecucion del programa fuera de la llave
+//    return; // Termina el flujo de ejecucion del programa 
+   }
+   System.out.println("- No entiendo esa respuesta : " + respuesta);
+   System.out.println("Adios ");
+  }
+
+  Scanner sc1 = new Scanner(System.in);
+  System.out.println("Escriba dos numeros : ");
+  System.out.println("x");
+  double x = sc1.nextDouble();
+  System.out.println("y");
+  double y = sc1.nextDouble();
+  System.out.println("producto : " + (x + y));
  }
 }
